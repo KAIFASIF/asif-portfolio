@@ -36,7 +36,7 @@ const About = () => {
         transition={{ duration: 0.5, delay: 0.05 }}
         className="flex items-center"
       >
-        <p className="text-white font-bold mt-5 text-2xl mr-5">About</p>
+        <p className="text-green-400 font-bold mt-5 text-2xl mr-5">About</p>
         <div className="flex-1 border-b-2 mt-6 ml-5"></div>
       </motion.div>
 

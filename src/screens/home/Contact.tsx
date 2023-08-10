@@ -39,7 +39,7 @@ const Contact = () => {
         className="flex items-center"
       >
         <div className="flex-1 border-b-2 mt-6"></div>
-        <p className="text-white font-bold mt-5 text-2xl mr-5 ml-5">
+        <p className="text-green-400 font-bold mt-5 text-2xl mr-5 ml-5">
           Contact
         </p>
         <div className="flex-1 border-b-2 mt-6"></div>
@@ -57,21 +57,21 @@ const Contact = () => {
           <div className="flex gap-4">
             <div className="flex justify-center items-center mt-2">
               {" "}
-              <AiOutlineMail className="text-2xl text-white" />
+              <AiOutlineMail className="text-2xl text-green-400" />
             </div>
             <p className="text-lg lg:text-2xl text-white">+91 955 069 7457</p>
           </div>
           <div className="flex gap-4">
             <div className="flex justify-center items-center mt-2">
               {" "}
-              <AiOutlineMail className="text-2xl text-white" />
+              <AiOutlineMail className="text-2xl text-green-400" />
             </div>
             <p className="text-lg lg:text-2xl text-white"> asifkaif21@gmail.com</p>
           </div>
           <div className="flex gap-4">
             <div className="flex justify-center items-center mt-2">
               {" "}
-              <AiOutlineHome className="text-2xl text-white" />
+              <AiOutlineHome className="text-2xl text-green-400" />
             </div>
             <p className="text-lg lg:text-2xl text-white">
               {" "}
