@@ -37,7 +37,7 @@ const Experience = () => {
         className="flex items-center"
       >
         <p className="text-green-400 font-bold mt-5 text-2xl mr-5">Experience</p>
-        <div className="flex-1 border-b-2 mt-10"></div>
+        <div className="flex-1 border-b-2 mt-7"></div>
       </motion.div>
 
       <motion.div

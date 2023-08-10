@@ -53,7 +53,7 @@ const Skills = () => {
         className="flex items-center"
       >
         <div className="flex-1 border-b-2 mt-10"></div>
-        <p className="text-green-400 font-bold mt-5 text-2xl ml-5">Skills</p>
+        <p className="text-green-400 font-bold mt-7 text-2xl ml-5">Skills</p>
       </motion.div>
 
       <motion.div
