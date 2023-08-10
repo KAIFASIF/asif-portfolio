@@ -52,8 +52,8 @@ const Skills = () => {
         transition={{ duration: 0.5, delay: 0.05 }}
         className="flex items-center"
       >
-        <div className="flex-1 border-b-2 mt-10"></div>
-        <p className="text-green-400 font-bold mt-5 lg:mt-7 text-2xl ml-5">Skills</p>
+        <div className="flex-1 border-b-2 mt-7"></div>
+        <p className="text-green-400 font-bold  mt-7 text-2xl ml-5">Skills</p>
       </motion.div>
 
       <motion.div
