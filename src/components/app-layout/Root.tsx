@@ -12,7 +12,10 @@ const Root = () => {
         </aside>
       )}
       <main className="bg-black flex-1">
-        <Navbar />
+      {!location && (
+        
+          <Navbar />
+      )}
         <Outlet />
       </main>
     </div>

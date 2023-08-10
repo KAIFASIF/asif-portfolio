@@ -6,26 +6,10 @@ import Experience from "./Experience";
 import UiUxDesign from "./UiUxDesign";
 import GraphicDesigns from "./GraphicDesigns";
 import Contact from "./Contact";
-import pdfUrl from "../../assets/images/asifCv.pdf";
-
 
 const Home = () => {
   return (
     <div className="w-full ">
-     
-
-
-
-
-    <div className=" w-full h-screen">
-      <iframe
-        src={pdfUrl}
-        title="PDF Viewer"
-        className=" w-full h-screen"
-        style={{ border: "none" }}
-      ></iframe>
-    </div>
-
       <section
         id="profile"
         className="flex justify-center w-full py-10 h-[90vh]  sm:[40vh] lg:h-screen  bg-zinc-950 items-center"

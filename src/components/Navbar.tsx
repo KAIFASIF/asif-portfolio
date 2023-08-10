@@ -5,9 +5,10 @@ import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { menuOptionsTypes } from "../utils/types";
 import { menuOptions } from "../utils/data";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const location = useLocation().pathname === "/resume";
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("profile");
@@ -80,13 +81,12 @@ const Navbar = () => {
       <div className="flex">
         <div className="flex justify-start mr-5">
           {!location && (
-            <a
+            <button
+              onClick={() => navigate("/resume")}
               className="cursor-pointer text-gray-100 border-gray-100  border-2 h-8 rounded px-5 hover:text-green-400 hover:border-green-400   hidden lg:block"
-              href="https://master--rococo-praline-c51326.netlify.app/resume"
-              target="_blank"
             >
               Resume
-            </a>
+            </button>
           )}
         </div>
         <button
