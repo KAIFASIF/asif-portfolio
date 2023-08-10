@@ -41,7 +41,7 @@ const Profile = () => {
         className="flex items-start flex-col"
       >
         <p className="text-white font-bold text-3xl sm:text-5xl">
-          Hey, I'm Shaik Asiff.
+          Hey, I'm Shaik Asif.
         </p>
         <p className="text-white mt-2 sm:mt-5 text-lg sm:text-2xl">
           I'm a{" "}
