@@ -5,7 +5,7 @@ import Sidebar from "../Sidebar";
 const Root = () => {
   const location = useLocation().pathname === "/resume";
   return (
-    <div className="flex items-start">
+    <div className="flex items-start bg-green-400 w-full overflow-x-hidden">
       {!location && (
         <aside className="bg-black sticky h-[100vh] top-0 w-14 hidden lg:block">
           <Sidebar />
