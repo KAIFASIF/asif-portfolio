@@ -45,12 +45,11 @@ const Experience = () => {
         initial="hidden"
         animate={childControls}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className="flex basis-1/2 justify-center flex-col items-center mt-4 gap-y-4"
+        className="flex basis-1/2 justify-center flex-col items-center lg:mt-4 gap-y-4"
       >
-       
-        <div className="grid grid-cols-1 lg:grid-cols-3  items-center justify-center lg:mt-4 w-full lg:gap-10 gap-5">
+        <div className="grid grid-cols-1 lg:grid-cols-2  items-center justify-center lg:mt-4 w-full lg:gap-10 gap-5">
           {/* MM */}
-          <div className="w-full lg:mt-4 lg:h-80 mt-10">
+          <div className="w-full lg:mt-4 mt-5">
             {" "}
             <p className="text-gray-100  text-lg font-semibold">
               Mahila Money Pvt Ltd{" "}
@@ -81,14 +80,47 @@ const Experience = () => {
             </div>
           </div>
 
+          {/* Bomway */}
+          <div className="w-full mt-2 md:mt-4 ">
+            {" "}
+            <p className="text-gray-100  text-lg font-semibold">
+              Bomway Pvt Ltd
+              <span className="text-sm font-normal">
+                {" "}
+                (Oct 2021 - Jan 2022)
+              </span>
+            </p>
+            <div className="grid  gap-y-1 lg:mt-2">
+              <ul className="mt-4 list-disc pl-6">
+                <li className="text-white mb-2">
+                  <p className="text-gray-400 text-lg">
+                    Ecommerce site for B2B.
+                  </p>
+                </li>
+                <li className="text-white mb-2">
+                  <p className="text-gray-400 text-lg">
+                    A web app where a trader can buy and sell product, inquire
+                    about a product, can subscribe , book an appointment and
+                    many more.
+                  </p>
+                </li>
+                <li className="text-white mb-2">
+                  <p className="text-gray-400 text-lg">
+                    Tools Used: React, Django, RestApi’s & Material UI.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           {/* Pentamount */}
-          <div className="w-full  mt-10 md:mt-4 lg:h-80">
+          <div className="w-full mt-2 md:mt-4  lg:h-48">
             {" "}
             <p className="text-gray-100  text-lg font-semibold">
               Pentamount Technologies Pvt Ltd
               <span className="text-sm font-normal">
                 {" "}
-                (April 2020 - Dec 2021)
+                (April 2020 - Sept 2021)
               </span>
             </p>
             <div className="grid  gap-y-1 lg:mt-2">
@@ -108,51 +140,67 @@ const Experience = () => {
                 </li>
                 <li className="text-white mb-2">
                   <p className="text-gray-400 text-lg">
-                    Tools Used: React, RestApi’s, JavaScript and Material UI
+                    Tools Used: React, RestApi’s, JavaScript and Material UI.
                   </p>
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Bomway */}
-          <div className="w-full mt-10 md:mt-4 lg:h-80">
+          {/* Embassy */}
+          <div className="w-full mt-2 md:mt-4   lg:h-48">
             {" "}
             <p className="text-gray-100  text-lg font-semibold">
-              Bomway Pvt Ltd
+              Embassy Services Pvt Ltd
               <span className="text-sm font-normal">
                 {" "}
-                (April 2020 - Dec 2021)
+                (Sept 2018 - March 2020)
               </span>
             </p>
             <div className="grid  gap-y-1 lg:mt-2">
               <ul className="mt-4 list-disc pl-6">
                 <li className="text-white mb-2">
                   <p className="text-gray-400 text-lg">
-                    Ecommerce site for B2B.
+                    With a keen eye for detail and a deep understanding of
+                    design principles, I enjoy creating everything from sleek
+                    logos to engaging print materials and stunning digital
+                    graphics. My goal is to communicate messages and tell
+                    stories through design, leaving a lasting impression on
+                    viewers.
                   </p>
                 </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Printo */}
+          <div className="w-full mt-2  lg:mt-20">
+            {" "}
+            <p className="text-gray-100  text-lg font-semibold">
+              Printo Document Services Pvt Ltd
+              <span className="text-sm font-normal">
+                {" "}
+                (April 2016 - April 2018)
+              </span>
+            </p>
+            <div className="grid  gap-y-1 lg:mt-2">
+              <ul className="mt-4 list-disc pl-6">
                 <li className="text-white mb-2">
                   <p className="text-gray-400 text-lg">
-                    A web app where a trader can buy and sell product , inquire
-                    about a product, can subscribe , book an appointment and
-                    many more.
-                  </p>
-                </li>
-                <li className="text-white mb-2">
-                  <p className="text-gray-400 text-lg">
-                    Tools Used: React, Django, RestApi’s & Material UI.
+                    As a passionate graphic designer, I thrive on transforming
+                    ideas and concepts into captivating visual experiences. My
+                    journey began with a curiosity for colors, shapes, and the
+                    power of imagery, and it has evolved into a dedication to
+                    crafting visually appealing and impactful designs.
                   </p>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-     
       </motion.div>
     </div>
   );
 };
 
 export default React.memo(Experience);
-

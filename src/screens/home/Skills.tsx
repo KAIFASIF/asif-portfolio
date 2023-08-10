@@ -40,7 +40,7 @@ const Skills = () => {
   };
   const frontend = ["React", "Angular", "React Native"];
   const css = ["TypeScript", "Tailwind CSS", "Material UI"];
-  const backend = ["Springboot (Java)", "Node Js", "Django(python)"];
+  const backend = ["Springboot (Java)", "Node Js", "Django(Python)"];
   const graphicDesign = ["Illustrator", "Photoshop", "Corel draw"];
   const uiux = ["Figma"];
   return (
@@ -88,6 +88,31 @@ const Skills = () => {
                 </ul>
               </div>
             </div>
+
+            <div>
+              <p className="text-gray-100  text-lg font-semibold">Backend</p>
+              <div className="grid  gap-y-4 mt-4">
+                <ul className="gap-y-2 rounded-full">
+                  {" "}
+                  {backend.length > 0 &&
+                    backend.map((ele: string, index: number) => (
+                      <motion.li
+                        key={index}
+                        variants={fadeInAnimationVariants}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true }}
+                        custom={index}
+                        className="text-gray-400 mb-4 text-lg"
+                      >
+                        {" "}
+                        {ele}{" "}
+                      </motion.li>
+                    ))}
+                </ul>
+              </div>
+            </div>
+
             <div>
               <p className="text-gray-100  text-lg font-semibold">CSS</p>
               <div className="grid  gap-y-4 mt-4">
@@ -101,30 +126,6 @@ const Skills = () => {
                         initial="initial"
                         whileInView="animate"
                         viewport={{ once: false }}
-                        custom={index}
-                        className="text-gray-400 mb-4 text-lg"
-                      >
-                        {" "}
-                        {ele}{" "}
-                      </motion.li>
-                    ))}
-                </ul>
-              </div>
-            </div>
-
-             <div>
-              <p className="text-gray-100  text-lg font-semibold">Backend</p>
-              <div className="grid  gap-y-4 mt-4">
-                <ul className="gap-y-2 rounded-full">
-                  {" "}
-                  {backend.length > 0 &&
-                    backend.map((ele: string, index: number) => (
-                      <motion.li
-                        key={index}
-                        variants={fadeInAnimationVariants}
-                        initial="initial"
-                        whileInView="animate"
-                        viewport={{ once: true }}
                         custom={index}
                         className="text-gray-400 mb-4 text-lg"
                       >
@@ -160,14 +161,14 @@ const Skills = () => {
                     ))}
                 </ul>
               </div>
-            </div> 
+            </div>
 
-             <div>
+            <div>
               <p className="text-gray-100  text-lg font-semibold">
                 UI/UX Designing
               </p>
               <div className="grid  gap-y-4 mt-4">
-              <ul className="gap-y-2 rounded-full">
+                <ul className="gap-y-2 rounded-full">
                   {" "}
                   {uiux.length > 0 &&
                     uiux.map((ele: string, index: number) => (
@@ -184,9 +185,9 @@ const Skills = () => {
                         {ele}{" "}
                       </motion.li>
                     ))}
-                </ul>  
+                </ul>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
       </motion.div>

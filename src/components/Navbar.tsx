@@ -5,15 +5,16 @@ import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { menuOptionsTypes } from "../utils/types";
 import { menuOptions } from "../utils/data";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation().pathname === "/resume";
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("profile");
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +26,8 @@ const Navbar = () => {
           window.scrollY >= sectionTop &&
           window.scrollY < sectionTop + sectionHeight
         ) {
-          setActiveLink(section.id);
+          console.log(section?.id);
+          setActiveLink(section?.id);
         }
       });
     };
@@ -45,7 +47,6 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             className="flex justify-center items-center cursor-pointer h-10 w-full -mt-2 lg:hidden"
-            // onClick={handleProfile}
           >
             <div
               className={`rounded px-1  border-2  text-md font-semibold        
@@ -53,8 +54,7 @@ const Navbar = () => {
               activeLink === "profile"
                 ? "border-green-400 text-green-400"
                 : "text-gray-200 border-gray-400"
-            }`
-          }
+            }`}
             >
               SA
             </div>
@@ -79,13 +79,15 @@ const Navbar = () => {
       </div>
       <div className="flex">
         <div className="flex justify-start mr-5">
-          <a
-            className="cursor-pointer bg-green-400  p-1 rounded px-5 hover:font-semibold text-black hidden md:block"
-            href="/cv"
-            target="_blank"
-          >
-            Resume
-          </a>
+          {!location && (
+            <a
+              className="cursor-pointer bg-green-400  p-1 rounded px-5 hover:font-semibold text-black hidden lg:block"
+              href="/resume"
+              target="_blank"
+            >
+              Resume
+            </a>
+          )}
         </div>
         <button
           onClick={toggleDropdown}

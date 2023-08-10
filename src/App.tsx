@@ -1,5 +1,5 @@
 import Root from "./components/app-layout/Root";
-import CV from "./screens/cv";
+import Resume from "./screens/resume";
 import Home from "./screens/home";
 import {
   createBrowserRouter,
@@ -12,7 +12,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route path="/" element={<Home />} />
-      <Route path="/cv" element={<CV />} />
+      <Route path="/resume" element={<Resume />} />
     </Route>
   )
 );

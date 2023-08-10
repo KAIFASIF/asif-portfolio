@@ -40,7 +40,9 @@ const Profile = () => {
         transition={{ duration: 1, delay: 0.5 }}
         className="flex items-start flex-col"
       >
-        <p className="text-white font-bold text-3xl sm:text-5xl">Hey, I'm Shaik Asif.</p>
+        <p className="text-white font-bold text-3xl sm:text-5xl">
+          Hey, I'm Shaik Asif.
+        </p>
         <p className="text-white mt-2 sm:mt-5 text-lg sm:text-2xl">
           I'm a{" "}
           <span className="font-semibold text-lg sm:text-2xl text-green-400">
@@ -56,9 +58,12 @@ const Profile = () => {
         transition={{ duration: 1, delay: 0.25 }}
         className="flex  flex-col items-start "
       >
-        <p className="text-white mt-5 text-lg sm:text-2xl text-justify">
-          I've spent the last 5 years building and scaling software for some
-          pretty cool companies. I also teach people to paint onlidne
+        <p className="text-white mt-5 text-lg sm:text-2xl text-justify font-light">
+          I've spent 7 years in designing, building and scaling software for some
+          pretty cool companies. With a passion for creating user-friendly and
+          visually appealing web applications. With a strong background in both
+          frontend and backend development, I enjoy turning ideas into
+          functional and elegant solutions.
         </p>
         <div className="mt-5 flex justify-start">
           <Link

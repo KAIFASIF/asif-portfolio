@@ -1,9 +1,10 @@
 import React from "react";
 import pdfUrl from "../../assets/images/asifCv.pdf";
 
-const CV = () => {
+
+const Resume = () => {
   return (
-    <div className="h-screen">
+    <div className=" w-full h-screen">
       <iframe
         src={pdfUrl}
         title="PDF Viewer"
@@ -14,4 +15,4 @@ const CV = () => {
   );
 };
 
-export default React.memo(CV);
+export default React.memo(Resume);

@@ -51,14 +51,14 @@ const GraphicDesigns = () => {
         transition={{ duration: 0.5, delay: 0.25 }}
         className="flex justify-center flex-col items-center mt-10 gap-y-4"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 ">
           {graphicDesignsOptions.length > 0 &&
             graphicDesignsOptions.map((ele: designsTypes) => (
               <div className="text-white col-span-4" key={ele?.id}>
                 <img
                   src={ele?.image}
                   alt="Image"
-                  className="w-full h-full transition-transform transform scale-100 hover:scale-150"
+                  className="w-full h-full transition-transform transform scale-100 hover:scale-110"
                 />
               </div>
             ))}

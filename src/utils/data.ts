@@ -5,6 +5,10 @@ import gd3 from "../assets/images/gd3.png";
 import gd4 from "../assets/images/gd4.png";
 import gd5 from "../assets/images/gd5.png";
 import gd6 from "../assets/images/gd6.png";
+import ui1 from "../assets/images/ui1.png";
+import ui2 from "../assets/images/ui2.png";
+import ui3 from "../assets/images/ui3.png";
+
 
 export const menuOptions: menuOptionsTypes[] = [
   { id: 1, label: "About", link: "about" },
@@ -40,4 +44,20 @@ export const graphicDesignsOptions: designsTypes[] = [
     id: 6,
     image: gd6,
   },
+];
+
+export const uiUxDesignsOptions: designsTypes[] = [
+  {
+    id: 1,
+    image: ui1,
+  },
+  {
+    id: 2,
+    image: ui2,
+  },
+  {
+    id: 3,
+    image: ui3,
+  },
+
 ];
