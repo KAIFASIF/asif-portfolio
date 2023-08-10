@@ -33,6 +33,7 @@ const Profile = () => {
       ref={ref}
       className="w-full  p-10 lg:w-[50%]  lg:mb-60 flex items-start flex-col"
     >
+      {" "}
       <motion.div
         variants={parentVariants}
         initial="hidden"
@@ -50,7 +51,6 @@ const Profile = () => {
           </span>
         </p>
       </motion.div>
-
       <motion.div
         variants={childVariants}
         initial="hidden"
@@ -59,10 +59,10 @@ const Profile = () => {
         className="flex  flex-col items-start "
       >
         <p className="text-white mt-5 text-lg sm:text-2xl text-justify font-light">
-          I've spent 7 years in designing, building and scaling software for some
-          pretty cool companies. With a passion for creating user-friendly and
-          visually appealing web applications. With a strong background in both
-          frontend and backend development, I enjoy turning ideas into
+          I've spent 7 years in designing, building and scaling software for
+          some pretty cool companies. With a passion for creating user-friendly
+          and visually appealing web applications. With a strong background in
+          both frontend and backend development, I enjoy turning ideas into
           functional and elegant solutions.
         </p>
         <div className="mt-5 flex justify-start">
