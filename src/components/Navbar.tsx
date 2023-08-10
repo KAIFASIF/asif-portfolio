@@ -39,7 +39,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex items-center justify-between p-4 top-0 shadow-2xl z-20 w-full bg-zinc-950 sticky">
+    <nav className="flex items-end justify-between p-4 top-0 shadow-2xl z-20  bg-zinc-950 sticky w-full">
       <div className="flex justify-center items-center">
         <div className="ml-2 gap-4 flex justify-start">
           <Link
@@ -81,7 +81,7 @@ const Navbar = () => {
         <div className="flex justify-start mr-5">
           {!location && (
             <a
-              className="cursor-pointer bg-green-400  p-1 rounded px-5 hover:font-semibold text-black hidden lg:block"
+              className="cursor-pointer text-gray-100 border-gray-100  border-2 h-8 rounded px-5 hover:text-green-400 hover:border-green-400   hidden lg:block"
               href="/resume"
               target="_blank"
             >
@@ -91,7 +91,7 @@ const Navbar = () => {
         </div>
         <button
           onClick={toggleDropdown}
-          className="focus:outline-none lg:hidden"
+          className="focus:outline-none lg:hidden -mt-10"
         >
           <AiOutlineMenu className="w-6 h-6 text-white" />
         </button>

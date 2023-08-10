@@ -67,7 +67,7 @@ const Profile = () => {
         </p>
         <div className="mt-5 flex justify-start">
           <Link
-            className="cursor-pointer bg-green-400  p-2 rounded px-5 hover:font-semibold text-black"
+            className="cursor-pointer bg-green-400  p-2 rounded px-5 font-semibold hover:bg-green-500 hover:text-gray-300 text-black"
             to="contact"
             smooth={true}
             duration={500}

@@ -9,7 +9,19 @@ import Contact from "./Contact";
 
 const Home = () => {
   return (
-    <div className="w-full">
+    <div className="w-full ">
+      {/* <section
+        className="flex justify-center w-full py-10 bg-zinc-950 items-center"
+        id="ui/ux"
+      >
+        <Newd />
+      </section> */}
+
+      {/* <div className=" bg-yellow-400 h-96 w-full"></div>
+      <div className=" bg-yellow-400 h-96 w-full"></div>
+      <div className=" bg-yellow-400 h-96 w-full"></div>
+      <div className=" bg-yellow-400 h-96 w-full"></div>
+      <div className=" bg-yellow-400 h-96 w-full"></div> */}
       <section
         id="profile"
         className="flex justify-center w-full py-10 h-[90vh]  sm:[40vh] lg:h-screen  bg-zinc-950 items-center"
@@ -17,7 +29,7 @@ const Home = () => {
         <Profile />
       </section>
       <section
-        className="flex justify-center w-full py-10 lg:h-screen bg-zinc-900 items-center"
+        className="flex justify-center w-full py-10  bg-zinc-900 items-center"
         id="about"
       >
         <About />

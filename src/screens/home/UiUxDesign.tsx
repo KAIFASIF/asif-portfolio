@@ -30,7 +30,7 @@ const UiUxDesign = () => {
   };
 
   return (
-    <div ref={ref} className=" w-[90%] lg:w-[55%]">
+    <div ref={ref} className="w-[90%] lg:w-[55%]">
       <motion.div
         variants={parentVariants}
         initial="hidden"
@@ -64,7 +64,7 @@ const UiUxDesign = () => {
               </div>
             ))}
         </div>
-      </motion.div>
+      </motion.div> 
     </div>
   );
 };

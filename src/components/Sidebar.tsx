@@ -45,7 +45,7 @@ const Sidebar = () => {
         to="profile"
         smooth={true}
         duration={500}
-        className="flex justify-center items-center cursor-pointer h-14 w-full mt-1"
+        className="flex justify-center items-center cursor-pointer h-14 w-full mt-2"
         onClick={handleProfile}
       >
         <div

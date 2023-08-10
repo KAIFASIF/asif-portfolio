@@ -30,7 +30,7 @@ const GraphicDesigns = () => {
   };
 
   return (
-    <div ref={ref} className=" w-[90%] lg:w-[55%]">
+    <div ref={ref} className="w-[90%] lg:w-[55%]">
       <motion.div
         variants={parentVariants}
         initial="hidden"
