@@ -82,7 +82,7 @@ const Navbar = () => {
           {!location && (
             <a
               className="cursor-pointer text-gray-100 border-gray-100  border-2 h-8 rounded px-5 hover:text-green-400 hover:border-green-400   hidden lg:block"
-              href="/resume"
+              href="https://master--rococo-praline-c51326.netlify.app/resume"
               target="_blank"
             >
               Resume
