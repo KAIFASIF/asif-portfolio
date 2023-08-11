@@ -6,7 +6,7 @@ const Root = () => {
   const location = useLocation().pathname === "/resume";
   return (
     <div className="flex  felx-col top-0 w-full">
-    {/* <div className="flex  felx-col top-0 w-full  overflow-x-hidden lg:overflow-x-clip"> */}
+    {/* <div className="flex  felx-col top-0 w-full  overflow-x-hidden lg:overflow-x-clipp"> */}
       {!location && (
         <aside className="bg-black sticky h-[100vh] top-0 w-14 hidden lg:block">
           <Sidebar />
