@@ -96,7 +96,7 @@ const Navbar = () => {
           <AiOutlineMenu className="w-6 h-6 text-white" />
         </button>
         {isDropdownOpen && (
-          <div className="absolute top-16 right-0 z-20 bg-zinc-950 border border-gray-200 shadow-md rounded-md py-2">
+          <div className="absolute top-16 right-0 z-20 bg-  -950 border border-gray-200 shadow-md rounded-md py-2">
             <ul>
               {menuOptions.length > 0 &&
                 menuOptions.map((ele: menuOptionsTypes) => (

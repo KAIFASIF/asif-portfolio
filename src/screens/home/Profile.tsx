@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { Link } from "react-scroll";
+import { Helmet } from "react-helmet-async";
 
 const Profile = () => {
   const ref = useRef(null);
@@ -33,6 +34,11 @@ const Profile = () => {
       ref={ref}
       className="w-full  p-10 lg:w-[50%]  lg:mb-60 flex items-start flex-col"
     >
+      <Helmet>  
+        <title>Asiff Profile</title>
+        <meta name="description" content="asif profile"/>
+        <link rel="canonical" href="/"/>
+      </Helmet>
       {" "}
       <motion.div
         variants={parentVariants}
