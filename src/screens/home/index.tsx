@@ -16,7 +16,7 @@ const Home = () => {
       >
         <Profile />
       </section>
-      {/* <section
+      <section
         className="flex justify-center w-full py-10  bg-zinc-900 items-center"
         id="about"
       >
@@ -52,7 +52,7 @@ const Home = () => {
         id="contact"
       >
         <Contact />
-      </section> */}
+      </section>
     </div>
   );
 };
